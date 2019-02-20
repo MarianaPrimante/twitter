@@ -4,14 +4,30 @@
 <head>
     <meta charset="utf-8">
     <title>Twitter</title>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <textarea id="twitter" onclick="contarCaracteres();" onblur="contarCaracteres();" onkeypress="contarCaracteres();" placeholder="No que você está pensando?"></textarea>
-    <input type="submit" id="btntwittar" value="TWEET" />
-    <div id="restante"></div>
-    <p id="posttwitter" class="posttwitter"></p>
+    <p class="titletwitter">Twitter</p>
+    <form action="#" method="GET">
+        <main>
+            <div class="social">
+                <p>Perfil do usuário</p>
+            </div>
+            <div class="txtarea">
+                <textarea class="txtareatotal" rows="1" cols="60" id="twitter" onclick="contarCaracteres();" onblur="contarCaracteres();" onkeypress="contarCaracteres();" onkeydown="getKey()"; placeholder="No que você está pensando?"></textarea>
+                <div class="buttonrest">
+                    <input type="submit" class="btntwittar" id="btntwittar" value="TWEET" />
+                    <div class="rest" id="restante"></div>
+                </div>
+            </div>
+        </main>
+        <ul class="posttotal" id="posttotal">
+    
+        </ul>
+    </form>
     <script src="twitter.js"></script>
 </body>
 

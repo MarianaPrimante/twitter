@@ -1,3 +1,108 @@
-.posttwitter {
-    background-color: red;
+body {
+    background-image: url("imagens/imagetwo.jpg");
+    margin: 0%;
+    padding: 0%;
+}
+
+main {
+    display: flex;
+    height: 400px;
+}
+
+.flex-main {
+    display: flex;
+    justify-content: space-around;
+}
+
+div {
+    margin: auto;
+}
+
+.titletwitter {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background-color: #1c94e0;
+    text-align: center;
+    margin: auto;
+    padding: 1%;
+    color: white;
+    font-size: 40px;
+    font-family: 'Special Elite', cursive;
+}
+
+.social,
+.txtarea {
+    background-color: white;
+    font-family: 'Inconsolata', monospace;
+    box-shadow: 0px 0px 3px #a3b0bd;
+    width: 40%;
+    height: 40%;
+    border-radius: 5px;
+}
+
+.txtareatotal {
+    resize: auto;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: stretch;
+    border: none;
+    border-bottom: 1px solid #cfdce9;
+    margin: auto;
+    margin-top: 1%;
+    font-size: 15px;
+    padding: 0%;
+    overflow: hidden;
+    background-size: cover;
+    word-wrap: break-word;
+    height:auto;
+}
+
+.posttotal {
+    background-color: white;
+    background-size: cover;
+    word-wrap: break-word;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+    border: none;
+    width: 50%;
+    height: 80%;
+    box-shadow: 0px 0px 3px #a3b0bd;
+    border-radius: 5px;
+    text-align: justify;
+    
+}
+
+.buttonrest {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.btntwittar {
+    display: flex;
+    background-color: #1da1f2;
+    border: 1px solid #1da1f2;
+    color: #fff;
+    border-radius: 50px;
+    box-shadow: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 6px 16px;
+    text-align: center;
+    margin-left: 3%;
+    margin-top: 1%;
+}
+
+.rest {
+    display: flex;
+    text-align: left;
+    position: relative;
+    margin-right: 3%;
+    margin-top: 3%;
 }
