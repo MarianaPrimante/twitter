@@ -1,12 +1,17 @@
-/*function twittar() {
+function twittar() {
+    let tweetOne = document.createElement("p");
+    let tweetTwo = document.createElement("p");
+    let li = document.createElement("li");
     let tweet = document.getElementById("twitter").value;
-    let post = document.getElementById("posttwitter").innerHTML = tweet;
-    let postTwo = document.getElementById("hourpost").innerHTML = time();
-    let postTotal = post + postTwo;
-    document.getElementsByTagName('form')[0].reset()    
-}*/
+    tweetOne.innerHTML = tweet;
+    tweetTwo.innerHTML = time();
+    li.appendChild(tweetOne);
+    li.appendChild(tweetTwo);
+    document.getElementById("posttotal").appendChild(li);
+    document.getElementsByTagName('form')[0].reset()
+}
 
-
+document.getElementById('btntwittar').addEventListener('click', twittar);
 
 function contarCaracteres() {
     let max = 140;
@@ -34,10 +39,17 @@ function contarCaracteres() {
     }
 }
 
-function getKey() {
-    let lengthPostTwitter = document.getElementById("twitter");
-    if(lengthPostTwitter.scrollHeight > lengthPostTwitter.offsetHeight){
-        lengthPostTwitter.rows +=1;
+
+let lengthPostTwitter = document.getElementById("twitter");
+lengthPostTwitter.addEventListener('keydown', getKey);
+
+function getKey(event) {
+    let code = event.keyCode;
+    if (lengthPostTwitter.scrollHeight > lengthPostTwitter.offsetHeight || code === 13 && code !== 8) {
+        lengthPostTwitter.rows += 1;
+    }
+    if (lengthPostTwitter.scrollHeight < lengthPostTwitter.offsetHeight && code === 8) {
+        lengthPostTwitter.rows -= 1;
     }
 }
 
@@ -47,25 +59,10 @@ function time() {
     let min = today.getMinutes();
     let strMin = min.toString();
     let strHour = hour.toString();
-    if(strHour.length < 2)
-    strHour = "0" + strHour;
-    if(strMin.length < 2)
-    strMin = "0" + strMin;  
-    let timeToday = hour + ":" + min;
+    if (strHour.length < 2)
+        strHour = "0" + strHour;
+    if (strMin.length < 2)
+        strMin = "0" + strMin;
+    let timeToday = strHour + ":" + strMin;
     return timeToday
-}
-
-document.getElementById('btntwittar').addEventListener('click', twittar);
-
-function twittar(){
-    let tweetOne = document.createElement("p");
-    let tweetTwo = document.createElement("p");
-    let div = document.createElement("div");
-    let tweet = document.getElementById("twitter").value;
-    tweetOne.innerHTML = tweet;
-    tweetTwo.innerHTML = time();
-    div.appendChild(tweetOne);
-    div.appendChild(tweetTwo);
-    document.getElementById("posttotal").appendChild(div);
-    document.getElementsByTagName('form')[0].reset() 
 }

@@ -39,6 +39,7 @@ div {
     width: 40%;
     height: 40%;
     border-radius: 5px;
+    padding: 2% 1% 1% 2%;
 }
 
 .txtareatotal {
@@ -50,20 +51,22 @@ div {
     border: none;
     border-bottom: 1px solid #cfdce9;
     margin: auto;
-    margin-top: 1%;
+    margin-top: 5%;
     font-size: 15px;
     padding: 0%;
     overflow: hidden;
     background-size: cover;
     word-wrap: break-word;
-    height:auto;
+    height: auto;
+    width: 85%;
+    font-family: 'Inconsolata', monospace;
 }
 
-.posttotal {
+li {
     background-color: white;
     background-size: cover;
     word-wrap: break-word;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Inconsolata', monospace;
     justify-content: center;
     position: relative;
     margin: auto;
@@ -73,7 +76,8 @@ div {
     box-shadow: 0px 0px 3px #a3b0bd;
     border-radius: 5px;
     text-align: justify;
-    
+    list-style-type: none;
+    padding: 1%;
 }
 
 .buttonrest {
@@ -95,7 +99,7 @@ div {
     line-height: 20px;
     padding: 6px 16px;
     text-align: center;
-    margin-left: 3%;
+    margin-left: 8%;
     margin-top: 1%;
 }
 
@@ -103,6 +107,7 @@ div {
     display: flex;
     text-align: left;
     position: relative;
-    margin-right: 3%;
+    margin-right: 8%;
     margin-top: 3%;
+    font-family: 'Inconsolata', monospace;
 }
