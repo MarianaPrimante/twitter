@@ -4,9 +4,9 @@ body {
     padding: 0%;
 }
 
-main {
+.main {
     display: flex;
-    height: 400px;
+    margin-top: 5%;
 }
 
 .flex-main {
@@ -18,7 +18,7 @@ div {
     margin: auto;
 }
 
-.titletwitter {
+.title-twitter {
     display: flex;
     position: relative;
     justify-content: center;
@@ -31,35 +31,41 @@ div {
     font-family: 'Special Elite', cursive;
 }
 
-.social,
-.txtarea {
-    background-color: white;
-    font-family: 'Inconsolata', monospace;
-    box-shadow: 0px 0px 3px #a3b0bd;
-    width: 40%;
-    height: 40%;
-    border-radius: 5px;
-    padding: 2% 1% 1% 2%;
+.user-title {
+    font-size: 28px;
 }
 
-.txtareatotal {
-    resize: auto;
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: stretch;
-    border: none;
-    border-bottom: 1px solid #cfdce9;
-    margin: auto;
-    margin-top: 5%;
-    font-size: 15px;
-    padding: 0%;
-    overflow: hidden;
-    background-size: cover;
-    word-wrap: break-word;
-    height: auto;
-    width: 85%;
+.user-info {
+    font-size: 20px;
+}
+
+.social,
+.text-area {
+    padding: 2% 1% 1% 2%;
+    box-shadow: 0px 0px 3px #1da1f2;
+    border-radius: 5px;
     font-family: 'Inconsolata', monospace;
+    background: #FFFFFF;
+    width: 35%;
+    margin: 0 auto 100px;
+    padding: 3%;
+    text-align: center;
+}
+
+.text-area-total {
+    overflow: hidden;
+    font-family: 'Inconsolata', monospace; 
+    outline: 0;
+    background: rgb(232, 240, 254);
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px 7.5px 15px 7.5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    resize: none;
+    word-wrap:break-word;
+    background-size: cover;
 }
 
 li {
@@ -81,7 +87,7 @@ li {
     margin-top: 1%;
 }
 
-.buttonrest {
+.btnrest {
     display: flex;
     justify-content: space-between;
     margin: auto;
@@ -105,10 +111,7 @@ li {
 }
 
 .rest {
-    display: flex;
-    text-align: left;
-    position: relative;
-    margin-right: 8%;
-    margin-top: 3%;
-    font-family: 'Inconsolata', monospace;
+    margin: 1.5% 0% 1.5% 8%;
+    display:flex;
+    align-items: center;
 }

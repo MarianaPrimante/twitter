@@ -10,24 +10,27 @@
 </head>
 
 <body>
-    <p class="titletwitter">Twitter</p>
-    <form action="#" method="GET">
-        <main>
-            <div class="social">
-                <p>Perfil do usuário</p>
-            </div>
-            <div class="txtarea">
-                <textarea class="txtareatotal" rows="1" cols="60" id="twitter" onclick="contarCaracteres();" onblur="contarCaracteres();" onkeypress="contarCaracteres();" onkeydown="getKey(event);" ; placeholder="No que você está pensando?"></textarea>
-                <div class="buttonrest">
-                    <input type="submit" class="btntwittar" id="btntwittar" value="TWEET" />
-                    <div class="rest" id="restante"></div>
-                </div>
-            </div>
-        </main>
-        <ul class="posttotal" id="posttotal">
-
-        </ul>
-    </form>
+ <header>
+  <p class="title-twitter">Twitter</p>
+ </header>
+ <form>
+  <main class="main">
+    <div class="social">
+     <p class="user-title">Perfil do usuário</p>
+     <p class="user-info">Mariana Primante</p>
+     <p class="user-info">28 anos</p>
+     <p class="user-info">Casada</p>
+    </div>
+        <div class="text-area">
+         <textarea class="text-area-total" rows="1" cols="60" id="twitter" placeholder="No que você está pensando?"></textarea>
+          <div class="btnrest">
+            <input type="submit" class="btntwittar" id="btntwittar" value="TWEET" />
+            <p class="rest" id="rest"></p>
+          </div>  
+        </div>
+  </main>
+        <ul class="post-total" id="post-total"></ul>
+ </form>
     <script src="src/twitter.js"></script>
 </body>
 
